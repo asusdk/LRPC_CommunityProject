@@ -21,6 +21,6 @@ Public Class Product
     Public Property ProductComment As String = String.Empty
 
     Public Overrides Function ToString() As String
-        Return $"{Id} - {ProductName}"
+        Return $"{Id} - {ProductName} for {ProductPrice.ToString()}"
     End Function
 End Class
