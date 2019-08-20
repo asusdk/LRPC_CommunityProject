@@ -1,7 +1,8 @@
-﻿Public Class Product
+﻿
+<Serializable>
+Public Class Product
 
     Public Property Id As Guid = Guid.NewGuid()
-
 
     Public Property ProductName As String = "unnamed Product"
 
