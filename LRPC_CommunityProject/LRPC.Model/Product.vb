@@ -19,4 +19,8 @@ Public Class Product
     Public Property ShippingFee As Decimal = 0
 
     Public Property ProductComment As String = String.Empty
+
+    Public Overrides Function ToString() As String
+        Return $"{Id} - {ProductName}"
+    End Function
 End Class
