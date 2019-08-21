@@ -4,13 +4,13 @@
 Public Class Settings
     Inherits ModelBase
 
-    <Range(1, 999, ErrorMessage:="Labor accepts values between {1} and {2}")>
+    <Range(1, 999, ErrorMessage:="The price of one hour of Labor should be between {1} and {2}.")>
     Public Property Labor As Decimal = 115
 
-    <Range(1, 100, ErrorMessage:="PriceSplitter accepts values between {1} and {2}")>
+    <Range(1, 100, ErrorMessage:="Price will be splitted by this value, please enter a value between {1} and {2}.")>
     Public Property PriceSplitter As Decimal = 40
 
-    <Required(ErrorMessage:="Path has to be entered")>
+    <Required(ErrorMessage:="A path to the DataBase-file has to be entered")>
     Public Property XmlPath As String = AppDomain.CurrentDomain.BaseDirectory & "\LRPC_DB.xml"
 
 
